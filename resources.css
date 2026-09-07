@@ -1,11 +1,11 @@
 /* MCK Horizons — shared stylesheet for resource/detail pages */
 :root {
-  --bg: #F4F6F9; --bg-alt: #E9EEF3; --surface: #FFFFFF;
-  --ink: #14304F; --ink-soft: #24425F; --muted: #56697B; --faint: #8492A0;
-  --line: #DBE2EA; --line-strong: #C4CFDA;
-  --navy: #14304F; --navy-deep: #0D2138;
-  --accent: #2E6DA4; --accent-deep: #21557F; --accent-tint: #E6EEF6;
-  --gold: #E4A22C; --gold-deep: #BE821A; --gold-tint: #FAF1DB;
+  --bg: #F4F6F9; --bg-alt: #E7F0FA; --surface: #FFFFFF;
+  --ink: #1E3A5F; --ink-soft: #1A1A1A; --muted: #64748B; --faint: #94A3B8;
+  --line: #D6E4F0; --line-strong: #C2D5E8;
+  --navy: #1E3A5F; --navy-deep: #16293F;
+  --accent: #2E6DA4; --accent-deep: #21557F; --accent-tint: #E8F1FA;
+  --gold: #F5A623; --gold-deep: #BE7C10; --gold-tint: #FAF1DB;
   --green: #2E7D53; --green-tint: #E4F1EA; --red: #B4462F;
   --shadow-sm: 0 1px 2px rgba(13,33,56,.06), 0 1px 3px rgba(13,33,56,.05);
   --shadow-md: 0 6px 20px rgba(13,33,56,.09), 0 2px 6px rgba(13,33,56,.05);
@@ -22,7 +22,7 @@
     --ink:#E9EFF5; --ink-soft:#C7D5E1; --muted:#93A5B6; --faint:#6B7E90;
     --line:#21405C; --line-strong:#2D4E6E;
     --accent:#5C99CB; --accent-deep:#4680B2; --accent-tint:#123049;
-    --gold:#EAB13F; --gold-deep:#C98F2A; --gold-tint:#2A2412;
+    --gold:#F2AE33; --gold-deep:#D19A2E; --gold-tint:#2A2412;
     --green:#4CB07A; --green-tint:#12281D; --red:#E0765A;
     --shadow-sm:0 1px 2px rgba(0,0,0,.4); --shadow-md:0 6px 20px rgba(0,0,0,.45);
   }
@@ -33,7 +33,7 @@
   --ink:#E9EFF5; --ink-soft:#C7D5E1; --muted:#93A5B6; --faint:#6B7E90;
   --line:#21405C; --line-strong:#2D4E6E;
   --accent:#5C99CB; --accent-deep:#4680B2; --accent-tint:#123049;
-  --gold:#EAB13F; --gold-deep:#C98F2A; --gold-tint:#2A2412;
+  --gold:#F2AE33; --gold-deep:#D19A2E; --gold-tint:#2A2412;
   --green:#4CB07A; --green-tint:#12281D; --red:#E0765A;
   --shadow-sm:0 1px 2px rgba(0,0,0,.4); --shadow-md:0 6px 20px rgba(0,0,0,.45);
 }
