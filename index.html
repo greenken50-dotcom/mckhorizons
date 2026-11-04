@@ -826,14 +826,19 @@
           </div>
         </div>
 
-        <form class="contact" id="contactForm">
+        <form class="contact" id="contactForm" action="https://formsubmit.co/mck.horizons@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New discovery call request — MCK Horizons website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.mckhorizons.com/thank-you.html">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;opacity:0;">
           <div class="form-row">
             <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name"></div>
             <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@company.com"></div>
           </div>
           <div class="form-row">
             <div class="field"><label for="company">Company</label><input id="company" name="company" type="text" autocomplete="organization" placeholder="Company / portfolio"></div>
-            <div class="field"><label for="sites">Locations</label><input id="sites" name="sites" type="text" placeholder="e.g. 25 sites"></div>
+            <div class="field"><label for="sites">Locations</label><input id="sites" name="locations" type="text" placeholder="e.g. 25 sites"></div>
           </div>
           <div class="field">
             <label for="interest">I'm interested in</label>
@@ -848,7 +853,7 @@
           </div>
           <div class="field"><label for="message">Where do margins feel exposed?</label><textarea id="message" name="message" placeholder="A sentence or two about your portfolio and what you'd like to improve."></textarea></div>
           <button class="btn btn-primary" type="submit">Request discovery call</button>
-          <p class="form-note">Opens your email app with the message ready to send to mck.horizons@gmail.com.</p>
+          <p class="form-note">Sends straight to Ken's inbox — we reply within one business day. Prefer your own email? <a href="mailto:mck.horizons@gmail.com?subject=Discovery%20call%20request" style="color:var(--accent);font-weight:600;">Email directly</a> &nbsp;·&nbsp; <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=mck.horizons@gmail.com&amp;su=Discovery%20call%20request" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">Open in Gmail</a></p>
         </form>
       </div>
     </div>
@@ -935,16 +940,7 @@
       });
     });
 
-    var form = document.getElementById('contactForm');
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var g = function (id) { return (document.getElementById(id).value || '').trim(); };
-      var name = g('name'), email = g('email'), company = g('company'), sites = g('sites'), message = g('message');
-      var interest = document.getElementById('interest').value;
-      var subject = 'Discovery call request — ' + (name || 'website') + (company ? ' (' + company + ')' : '');
-      var body = ['Name: ' + name, 'Email: ' + email, 'Company: ' + company, 'Locations: ' + sites, 'Interested in: ' + interest, '', message].join('\n');
-      window.location.href = 'mailto:mck.horizons@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    });
+    // Contact form submits directly to the form service — no mailto, no email client needed.
 
     document.getElementById('year').textContent = new Date().getFullYear();
   })();
